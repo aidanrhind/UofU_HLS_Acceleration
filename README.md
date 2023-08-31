@@ -1,2 +1,2 @@
 # TPUofU
-HLS CNN Accelerator for FPGA
+HLS Based CNN Accelerator for FPGA

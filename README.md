@@ -6,7 +6,7 @@ Built for AMD-Xilinx FPGAs using Vitis HLS and Finn HLS-LIB C++ library.
 
 
 VGG16 Architecture and Implementation:
---------------------------------------
+______________________________________
 - 13 Convolutional layers and 3 Fully Connected layers with max pooling, batch normalization, and ReLU activations. 
 - Implemented in Pytorch, trained on CIFAR100 dataset for image classification. (Transfer Learning Dataset TBA_ -AR)
 - Trained on Nvidia GeForce RTX 4060 enabled Laptop.

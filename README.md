@@ -1,9 +1,10 @@
-# UofUtah HLS Acceleration Library
+# UofUtah HLS CNN Acceleration 
+- Dataflow Accelerators for deep convolutional neural networks via Vitis HLS and Finn HLS-LIB C++ library for AMD-Xilinx FPGAs.
+
+
 Dataflow VGG16 Accelerator 
 --------------------------
-
-Built for AMD-Xilinx FPGAs using Vitis HLS and Finn HLS-LIB C++ library.
-
+ 
 
 VGG16 Architecture and Implementation:
 --------------------------------------

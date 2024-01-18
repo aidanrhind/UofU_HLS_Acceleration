@@ -1,4 +1,4 @@
-# TPUofU
+# UofUtah HLS Acceleration Library
 Dataflow VGG16 Accelerator 
 --------------------------
 

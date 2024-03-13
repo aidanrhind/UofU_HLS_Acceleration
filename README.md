@@ -1,39 +1,20 @@
 # UofUtah HLS CNN Acceleration 
-- Dataflow Accelerators for deep convolutional neural networks via Vitis HLS and Finn HLS-LIB C++ library for AMD-Xilinx FPGAs.
+- Dataflow Accelerators for deep convolutional neural networks via Vitis HLS and Finn compiler for AMD-Xilinx FPGAs.
 
 
-Dataflow VGG16 Accelerator 
+ANN_MNIST 
 --------------------------
- 
+- 3 Layer Multilayer Perceptron implemented in Vitis-HLS for MNIST hand written digit recongition. Fully Connected layers represented as Matrix-Vector Multiplication and each layer is fully pipelined and unrolled for maximum throughput and performance. 
 
-VGG16 Architecture and Implementation:
+Lenet5_Notebooks:
 --------------------------------------
-- 13 Convolutional layers and 3 Fully Connected layers with max pooling, batch normalization, and ReLU activations. 
-- Implemented in Pytorch, trained on CIFAR100 dataset for image classification. (Transfer Learning Dataset TBA_ -AR)
-- Trained on Nvidia GeForce RTX 4060 enabled Laptop.
-- Total training Time ~40 hours
+- Quantization Aware training for 5 layer CNN (Lenet5) implementation in [Brevitas](https://github.com/Xilinx/brevitas) using 8 bit quantizations for inputs, weights, and activations. Train on MNIST handwritted digits dataset, export to onnx, apply transformations, export to [FINN](https://github.com/Xilinx/finn) for Vitis-HLS acclerator generation and deploy on AMD Kria KV260 SOM for inference evalution via PYNQ. 
 
-Post Training Quantization Via Brevitas:
-----------------------------------------
-- Replace all Conv and Linear layers in model with quantized versions. 
-- Convert quantized model to onnx format. 
-
-
-FINN HLS-Lib Implementation:
+Resnet 50/18 Notebooks:
 ----------------------------
-- Conv2D implemented with sliding window operator and matrix-matrix multiplication.
-- FC layer implemented as GEMM. 
-
-RTL Code Generation:
---------------------
-- Hls to RTL synthesis
+In progress.
 
 
-Integrating Accelerator Kernel as Custom IP in Vivado IP integrator:
---------------------------------------------------------------------
-- Define Top Level ports and Clocks
-- OpenCV to launch USB webcam or mezzanine high fps cam
-- Measure Inference Performance and FPS compared to CPU/no accleration. 
 
 
 

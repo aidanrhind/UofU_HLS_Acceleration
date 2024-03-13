@@ -10,6 +10,9 @@ Lenet5_Notebooks:
 --------------------------------------
 - Quantization Aware training for 5 layer CNN (Lenet5) implementation in [Brevitas](https://github.com/Xilinx/brevitas) using 8 bit quantizations for inputs, weights, and activations. Train on MNIST handwritted digits dataset, export to onnx, apply transformations, export to [FINN](https://github.com/Xilinx/finn) for Vitis-HLS acclerator generation and deploy on AMD Kria KV260 SOM for inference evalution via PYNQ. 
 
+![alt text](https://github.com/aidanrhind/UofU_HLS_Acceleration/lenet-prefold.png)
+![alt text](https://github.com/aidanrhind/UofU_HLS_Acceleration/lenet-folding.png)
+
 Resnet 50/18 Notebooks:
 ----------------------------
 In progress.

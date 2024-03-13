@@ -1,0 +1,60 @@
+{
+  "Defaults": {},
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 1,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 1,
+    "SIMD": 25,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_0": {
+    "PE": 1
+  },
+  "ConvolutionInputGenerator_1": {
+    "SIMD": 1,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 1,
+    "SIMD": 15,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingMaxPool_Batch_1": {
+    "PE": 1
+  },
+  "MatrixVectorActivation_2": {
+    "PE": 1,
+    "SIMD": 4,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_3": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_4": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "LabelSelect_Batch_0": {
+    "PE": 1
+  }
+}
